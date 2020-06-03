@@ -1,4 +1,4 @@
-# React BMI Calculator
+# React Calculator
 About: A simple calculator built with React <br>
 Start Date: 3 Jun 2020 <br>
 Status: In Progress <br>
