@@ -29,3 +29,7 @@ button:hover {
   border: solid 1px grey;
   cursor: pointer;
 }
+
+.use-answer {
+  font-size: 11px;
+}
