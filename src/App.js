@@ -39,9 +39,6 @@ function App() {
       default:
         setResult(0);
     }
-  }
-
-  function clearField() {
     setInput1(0);
     setInput2(0);
   }
@@ -55,7 +52,7 @@ function App() {
       <h1>React Calculator</h1>
       <hr />
 
-      <form onClick={onSubmitResult}>
+      <form onSubmit={onSubmitResult}>
         <div className="form-group">
           <label htmlFor="input1">Number Set 1: </label>
           <input
@@ -64,9 +61,9 @@ function App() {
             value={input1}
             onChange={onChangeInput1}
           />{" "}
-          <button className="use-answer" onClick={useAnswer}>
+          <a className="use-answer" onClick={useAnswer}>
             use answer
-          </button>
+          </a>
         </div>
 
         <div className="form-group">
@@ -91,9 +88,7 @@ function App() {
         </div>
 
         <div className="form-group">
-          <button type="submit" onClick={clearField}>
-            Calculate
-          </button>
+          <button type="submit">Calculate</button>
         </div>
       </form>
       <h2>Your Result: {result} </h2>
