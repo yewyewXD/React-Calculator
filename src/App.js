@@ -4,7 +4,7 @@ import "./App.css";
 function App() {
   const [input1, setInput1] = useState(0);
   const [input2, setInput2] = useState(0);
-  const [operators, setOperators] = useState(["+", "-", "*", "/"]);
+  const [operators, setOperators] = useState(["+", "-", "*", "/", "^"]);
   const [operator, setOperator] = useState("+");
   const [result, setResult] = useState(0);
 
@@ -23,6 +23,7 @@ function App() {
     const minus = input1 - input2;
     const multiple = input1 * input2;
     const divide = input1 / input2;
+    const power = Math.pow(input1, input2);
     switch (operator) {
       case "+":
         setResult(plus);
@@ -35,6 +36,9 @@ function App() {
         break;
       case "/":
         setResult(divide);
+        break;
+      case "^":
+        setResult(power);
         break;
       default:
         setResult(0);
